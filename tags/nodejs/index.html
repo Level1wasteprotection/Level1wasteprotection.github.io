@@ -86,7 +86,7 @@
     
     <a href="/friends" class="waves-effect waves-light">
       
-      <i class="fa-archive" style="zoom: 0.6;"></i>
+      <i class="fas fa-rocket" style="zoom: 0.6;"></i>
       
       <span>工具</span>
     </a>
@@ -111,17 +111,6 @@
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>联系我</span>
     </a>
     
   </li>
@@ -188,7 +177,7 @@
 	  
 		<a href="/friends" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fa-archive"></i>
+			    <i class="fa-fw fas fa-rocket"></i>
 			
 			工具
 		</a>
@@ -213,17 +202,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			联系我
 		</a>
           
         </li>
@@ -356,29 +334,20 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/nodejs/" title="nodejs: 2">
+                <a href="/tags/npm/" title="npm: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="npm" style="background-color: #F9EBEA;">npm
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/nodejs/" title="nodejs: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="nodejs" style="background-color: #F9EBEA;">nodejs
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/npm/" title="npm: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="npm" style="background-color: #F5EEF8;">npm
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/nvm/" title="nvm: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="nvm" style="background-color: #D5F5E3;">nvm
-                        <span class="tag-length">2</span>
+                            data-tagname="nodejs" style="background-color: #F5EEF8;">nodejs
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -393,35 +362,7 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="nodejs, npm, nvm" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2020/04/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
-                            
-                            <span class="card-title">我的第一篇博客</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                国家一级保护废物
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="nodejs, npm, nvm" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="nodejs" data-aos="fade-up">
                 <div class="card">
                     <a href="/2020/04/04/hello-world/">
                         <div class="card-image tag-image">
@@ -643,7 +584,24 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+    
+   <script type="text/javascript">
+    var OriginTitile = document.title,
+        st;
+    document.addEventListener("visibilitychange", function () {
+        document.hidden ? (document.title = "写离开页面标题显示的内容", clearTimeout(st)) : (document.title =
+            "写进入页面标题显示的内容", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+    })
+    </script>
+ <script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"react":{"opacity":0.7}}});</script></body>
 
 </html>
